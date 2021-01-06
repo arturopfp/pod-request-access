@@ -11,7 +11,7 @@
 <body>
     <section class="main-container">
         <img class='logo' src="assets/desktop/logo.svg" alt="" srcset="">
-        <div class="sub-container">
+        <div id='sub-container' class="sub-container">
             <div class="text-container">
                 <h1><span class="green-txt">Publish your podcasts</span>
                     everywhere.
@@ -24,12 +24,15 @@
                 <img class='social-media' src="assets/desktop/google-podcasts.svg" alt="Google Podcast Logo" />
                 <img class='social-media' src="assets/desktop/pocket-casts.svg" alt="Pocket Casts Logo" />
             </div>
-            <div class="input-container">
-                <input type="text" placeholder="Email address">
-                <input type="button" value="Request Access">
+            <div id='input-container' class="input-container">
+                <input id='input' type="email" placeholder="Email address" required>
+                <input id='boton' type="button" value="Request Access">
             </div>
         </div>
+
+        <img class='footer-dots' src="assets/desktop/bg-pattern-dots.svg" alt="">
         
     </section>
+    <script src="mail.js"></script>
 </body>
 </html>
